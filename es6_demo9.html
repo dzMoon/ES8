@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	// 使用Class定义类，更加规范，且你能够继承：
+
+// ES5 原型方式
+function Car(x,y) {
+	this.x = x;
+	this.y = y;
+	// 改变内容
+}
+// prototype 公用部分
+Car.prototype.add = function(){
+	console.log(this)
+	return this.x + this.y
+}
+
+var car = new Car(1, 2)
+
+console.dir(car.add())
+
+//ES6
+// class Point
+// {
+//     constructor(x, y)
+//     {
+//         this.x = x;
+//         this.y = y;
+//         console.log(this)
+//     }
+
+//     add()
+//     {
+//         return this.x + this.y;
+//     }
+// }
+
+// var p = new Point(1, 2);
+
+// console.log(p.add()); // 输出3
+
+
+
+
+</script>
